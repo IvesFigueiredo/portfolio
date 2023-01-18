@@ -80,7 +80,7 @@ img{
     }
         .menu-principal__item{
         text-decoration: none;
-        font-weight: bold;
+        font-weight: normal;
         color: #343434;
         margin-bottom: 10px;
         display: block;
@@ -128,7 +128,7 @@ img{
     }
     .rodape__lista-links__item{
         text-decoration: none;
-        font-weight: bold;
+        font-weight: normal;
         color: white;
         margin-bottom: 10px;
         display:block;
