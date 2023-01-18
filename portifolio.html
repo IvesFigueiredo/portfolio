@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eu, Ives Figueiredo</title>
+     <link rel="stylesheet" href="css/normalize.css">
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/style-pagina.css">
+     <link rel="stylesheet" href="css/style-portifolio.css">
+</head>
+<body>
+    <header class="cabecalho">                                    <!--Cabeçalho, área superior da página-->
+        <a href="index.html" class="logo">Ives Figueiredo</a>                <!--Informação princippal do site, num tamanho maior-->
+ <!--Links de navegação do próprio site-->        
+        <nav class="menu-principal"> 
+            <button class="menu-principal__botao " >Abrir/Fechar menu</button>  <!--Gerador de botão na página, mas será melhorado no CSS-->
+            <ul class="menu-principal__lista">
+                <li><a class="menu-principal__item" href="index.html">Home</a></li>
+                <li><a class="menu-principal__item" href="sobre.html">Sobre mim</a></li>
+                <li><a class="menu-principal__item menu-principal__item--atual" href="portifolio.html">Portifólio</a></li>
+                <li><a class="menu-principal__item" href="contato.html">Contato</a></li>
+            </ul>
+        </nav>        
+    </header>
+    <main>
+        <header class="pagina-cabecalho">
+            <h1 class="pagina-cabecalho__titulo">Portifólio</h1>
+        </header>
+            <section class="pagina-conteudo">
+                <p class="text-center">Abaixo veremos alguns trabalhos e projetos de autoria própria.</p>
+            <nav>
+               <ul class="lista-trabalhos">
+                <li class="lista-trabalhos__item">
+                    <a href="img/portfolio/aviao.jpg"><img class="lista-trabalhos__img" src="img/portfolio/miniaturas/aviao.jpg" alt="avião.de.acrobacias">
+                    <h2 class="lista-trabalhos__titulo">Nome do trabalho</h2></a>
+                </li>
+                <li class="lista-trabalhos__item">
+                        <a href="img/portfolio/hongkong.jpg"><img class="lista-trabalhos__img" src="img/portfolio/miniaturas/hongkong.jpg" alt="Cidade.de.HongKong">
+                        <h2 class="lista-trabalhos__titulo">Nome do trabalho</h2></a>
+                </li>
+                <li class="lista-trabalhos__item">
+                        <a href="img/portfolio/paisagem.jpg"><img class="lista-trabalhos__img" src="img/portfolio/miniaturas/paisagem.jpg" alt="Paisagem">
+                            <h2 class="lista-trabalhos__titulo">Nome do Trabalho</h2></a>
+                </li>
+                <li class="lista-trabalhos__item">
+                            <a href="img/portfolio/corrente.jpg"><img class="lista-trabalhos__img" src="img/portfolio/miniaturas/corrente.jpg" alt="Corrente.de.bicicleta">
+                        <h2 class="lista-trabalhos__titulo">Nome do Trabalho</h2></a>
+                </li>    
+                <li class="lista-trabalhos__item">
+                        <a href="img/portfolio/banco.jpg"><img class="lista-trabalhos__img" src="img/portfolio/miniaturas/banco.jpg" alt="Banco.da.bicicleta">
+                        <h2 class="lista-trabalhos__titulo">Nome do Trabalho</h2></a>
+                </li>
+                <li class="lista-trabalhos__item">
+                        <a href="img/portfolio/cidade.jpg"><img class="lista-trabalhos__img" src="img/portfolio/miniaturas/cidade.jpg" alt="Cidade">
+                            <h2 class="lista-trabalhos__titulo">Nome do Trabalho</h2></a>
+                </li>
+               </ul> 
+            </nav>
+            </section>
+    </main>
+    <footer class="rodape">                                <!--Início da Seção do rodapé, onde estarão as informações no final da página-->
+        <div class="rodape-linha1">                                    <!--Divisão sem quebra de semântica, ainda relacionado com o contexto-->
+            <div class="rodape__coluna" >
+             <a href="index.html" class="logo logo--branco">Ives Figueiredo</a>
+             <p>"Somos o que fazemos, mas somos, principalmente, o que fazemos para mudar o que somos."<br> - Eduardo Galeano.</p>
+            </div>
+            <div class="rodape__coluna" >
+                 <h2 class="rodape__titulo">Social</h2>                 <!--Lista das redes sociais utilizando a tag "a" para linkar e usando o target="_blacnk" para abrir em uma nova aba-->
+                 <ul class="rodape__lista-links">
+                     <li><a class="rodape__lista-links__item" href="https://www.linkedin.com/in/ives-figueiredo"target="_blank">Linkedin</a></li>
+                     <li><a class="rodape__lista-links__item" href="https://github.com/"target="_blanck">GitHub</a></li>
+                     <li><a class="rodape__lista-links__item" href="https://instagram.com/ivesfigueiredo"target="_blank">Instagram</a></li>
+                     <li><a class="rodape__lista-links__item" href="https://facebook.com"target="_blank">Facebook</a></li>
+                     <li><a class="rodape__lista-links__item" href="https://youtube.com"target="_blank">Youtube</a></li>
+                 </ul>
+            </div>
+            <div class="rodape__coluna" >
+                 <h2 class="rodape__titulo">Links</h2>                  <!--Links (internos) que abriram páginas do próprio site-->
+                 <ul class="rodape__lista-links">
+                     <li><a class="rodape__lista-links__item" href="index.html">Home</a></li>
+                     <li><a class="rodape__lista-links__item" href="sobre.html">Sobre mim</a></li>
+                     <li><a class="rodape__lista-links__item" href="portifolio.html">Portifólio</a></li>
+                     <li><a class="rodape__lista-links__item" href="contato.html">Contato</a></li>
+                 </ul>
+            </div>  
+        </div>
+        <div class="rodape-linha2">
+         © 2022 - Todos os direitos reservados - Ives Figueiredo
+        </div>
+     </footer>
+</body>
+</html>

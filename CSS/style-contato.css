@@ -1,0 +1,49 @@
+.formulario{
+background-color: #efecec;
+margin-left: -15px; /*A inteção aqui é só fazer com que o cinza chegue a borda em ambos os lados*/
+margin-right: -15px;
+padding: 40px 15px 40px 15px; /*Posso por tudo em um padding só, 40px-top, 15px-left, 40px-bottom, 15px-right*/
+box-shadow: 0 3px 5px rgb(134, 134, 134); /*Onde o 0px é inicio de margem, 3px é a espessura na vertical, e 5px é a tonalidade, sendo possível também torna-la uma sombra interna a caixa, inserindo após os dois pontos "inset" */
+}
+
+.formulario__grupo{
+    margin-bottom: 15px;
+}
+
+.formulario__campo{
+    width: 100%;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    padding: 10px 5px;
+}
+
+.formulario__label{
+    color: #343434;
+}
+
+.formulario__botao{
+    border: 2px solid red;
+    border-radius: 300px;
+    background-color: white;
+    color: red;
+    padding: 5px 20px;
+    cursor: pointer; /*Faz com que o mouse mude da seta para a mãozinha*/
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+.mapa{
+    height: 0;
+    padding-bottom: 35%;
+    position: relative;
+    overflow: hidden; /*Boa pratica de alguns autores-ou seja nem o professor sabe exatamente kkk*/
+    margin: 0 -15px -25px -15px; /*Tirar as margens nas laterias e abaixo, deixar fullscreen*/
+}
+.mapa iframe{
+    width: 100% !important; /*!important: Para sobre por os dados importados do google, que é setado para uma determinada configuração*/
+    height: 100% !important;
+    position:absolute
+    
+}

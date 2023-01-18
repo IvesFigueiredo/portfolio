@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">  <!--Responsável em compreender acentos e símbolos especiais conforme o UniCode-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">                       <!--Responsável pela boa execução em provedores de internet explorer antigos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">      <!--Responsável para fazer a adequação de imagem em diferentes dispositivos-->
+   
+    <title>Eu,Ives Figueiredo</title>                                           <!--título do projeto, também apresenta o nome na aba do navegador -->
+            <link rel="stylesheet" href="css/normalize.css">
+            <link rel="stylesheet" href="css/style.css">
+            <link rel="stylesheet" href="css/style-home.css">
+            <link rel="shortcut icon" href="img/icones/Logo.2.ico" type="image/x-icon">
+        </head>
+<body>
+    <header class="cabecalho">                                    <!--Cabeçalho, área superior da página-->
+        <h1 class="logo">Ives Figueiredo</h1>                <!--Informação princippal do site, num tamanho maior-->
+ <!--Links de navegação do próprio site-->        
+        <nav class="menu-principal"> 
+            <button class="menu-principal__botao " >Abrir/Fechar menu</button>  <!--Gerador de botão na página, mas será melhorado no CSS-->
+            <ul class="menu-principal__lista">
+                <li><a class="menu-principal__item menu-principal__item--atual" href="index.html">Home</a></li>
+                <li><a class="menu-principal__item" href="sobre.html">Sobre mim</a></li>
+                <li><a class="menu-principal__item" href="portifolio.html">Portifólio</a></li>
+                <li><a class="menu-principal__item" href="contato.html">Contato</a></li>
+                <li><a class="menu-principal__item" href="../../Introdução.HTML/Exercícios/1°-Projeto/PP-Index.html" target="_blank">Estudos</a></li>
+            </ul>
+        </nav>        
+    </header>                                   <!--Fim do cabeçalho-->
+    <main>                                      <!--Início do corpo, responsável pela localização do conteúdo principal-->
+        <header class="cabecalho-home">                                <!--Seção superior do main, no corpo da página-->
+            <h2 class="cabecalho-home__titulo">Bem vindo!</h2>
+            <p class="cabecalho-home__subtitulo">Me chamo Ives Gabriel Figueiredo, construi este site primeiramente, com intuito de desenvolver os estudos e abrir uma porta de entrada para você me conhecer, então seja bem vindo e se permita a me conhecer um pouco, aqui você poderá conhecer um pouco da minha trajetória, meus conhecimentos acadêmicos e analisar meus projetos, me contactar nas redes sociais e/ou de preferência enviar uma mensagem direta. Sinta-se a vontade.</p>
+            <a class="cabecalho-home__role" href="#serviços" >role para ver mais</a><!--Uma entrada interativa, que permitirá ser designado para área de serviços.-->
+        </header>                               <!--Fim da seção superior do corpo principal-->
+        <section id="serviços" class="servicos">                 <!--Início da Seção de serviços-->
+            <h2 class="home__titulo">O que fazemos</h2>
+            <section class="servicos__item">                           <!--Início da seção desenvolvimento web-->
+                <img src="img/img/1mundo-modificado.png" alt="Icone.mundo">
+                <h3>Desenvolvimento Web</h3>
+                <p class="servicos__texto">Desenvolvo o projeto mais ideal para você que necessita de uma web responsiva e de qualidade.</p>
+            </section>
+            <section class="servicos__item">                           <!--Inicio da seção e-commerce-->
+                <img src="img/img/2carrinho-modificado.png" alt="Icone-ecommerce">
+                <h3>E-commerce</h3>
+                <p class="servicos__texto">Para maiores esclarecimentos entre em contato.<br> Adoraria tirar suas dúvidas.<br> Até mais.</p>
+            </section>
+            <section class="servicos__item">                           <!--Seção responsável pelo café-->
+                <img src="img/img/3cafe-modificado.png" alt="Icone.Cafe">
+                <h3>Café</h3>
+                <p class="servicos__texto">Quem não ama um café, não é mesmo?<br> Venha para o mundo digital e ganhe aquele tempo para o cafezinho.<br> Te aguardo.</p>
+            </section>
+        </section>                      <!--Fim da seção Serviços-->
+        <section class="depoimentos">                       <!--Início seção de depoimentos-->
+            <h2 class="home__titulo home__titulo--branco">O que falam de mim</h2>
+            <section class="depoimentos__item">
+                <img class="depoimentos__img" src="img/depoimentos/pessoa1.jpg" alt="Foto da pessoa 1">
+                <p class="depoimentos__texto">Realmente uma pessoa muito dedicada para desenvolver o projeto do jeito desejado, me ajudou muito. Gratidão.</p>
+                <p class="depoimentos__pessoas">Nome da Pessoa - Cargo</p>
+            </section>
+        </section>                              <!--Fim seção de depoimentos-->
+    </main>                             <!--Fim do corpo-->
+    <footer class="rodape">                                <!--Início da Seção do rodapé, onde estarão as informações no final da página-->
+       <div class="rodape-linha1">                                    <!--Divisão sem quebra de semântica, ainda relacionado com o contexto-->
+           <div class="rodape__coluna" >
+            <a href="index.html" class="logo logo--branco">Ives Figueiredo</a>
+            <p>"Somos o que fazemos, mas somos, principalmente, o que fazemos para mudar o que somos."<br> - Eduardo Galeano.</p>
+           </div>
+           <div class="rodape__coluna" >
+                <h2 class="rodape__titulo">Social</h2>                 <!--Lista das redes sociais utilizando a tag "a" para linkar e usando o target="_blacnk" para abrir em uma nova aba-->
+                <ul class="rodape__lista-links">
+                    <li><a class="rodape__lista-links__item" href="https://www.linkedin.com/in/ives-figueiredo"target="_blank">Linkedin</a></li>
+                    <li><a class="rodape__lista-links__item" href="https://github.com/"target="_blanck">GitHub</a></li>
+                    <li><a class="rodape__lista-links__item" href="https://instagram.com/ivesfigueiredo"target="_blank">Instagram</a></li>
+                    <li><a class="rodape__lista-links__item" href="https://facebook.com"target="_blank">Facebook</a></li>
+                    <li><a class="rodape__lista-links__item" href="https://youtube.com"target="_blank">Youtube</a></li>
+                </ul>
+           </div>
+           <div class="rodape__coluna" >
+                <h2 class="rodape__titulo">Links</h2>                  <!--Links (internos) que abriram páginas do próprio site-->
+                <ul class="rodape__lista-links">
+                    <li><a class="rodape__lista-links__item" href="index.html">Home</a></li>
+                    <li><a class="rodape__lista-links__item" href="sobre.html">Sobre mim</a></li>
+                    <li><a class="rodape__lista-links__item" href="portifolio.html">Portifólio</a></li>
+                    <li><a class="rodape__lista-links__item" href="contato.html">Contato</a></li>
+                </ul>
+           </div>  
+       </div>
+       <div class="rodape-linha2">
+        &copy; 2022 - Todos os direitos reservados - Ives Figueiredo
+       </div>
+    </footer>
+</body>
+</html>

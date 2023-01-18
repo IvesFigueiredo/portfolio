@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+/*Cabeçalho padrão para possibilitar a importação de uma fonte de texto*/
+@font-face{
+    font-family: "Source Sans Pro";
+    src: url('../fontes/source-sans-pro/SourceSansPro-Regular.otf');
+    }
+/*Alterando o negrito das fontes com font-weight: border;*/
+    @font-face{
+        font-family: "Source Sans Pro";
+        src: url('../fontes/source-sans-pro/SourceSansPro-Regular.otf');
+        font-weight: bold;
+    }
+    @font-face{
+        font-family: "Source Sans Pro";
+        src: url('../fontes/source-sans-pro/SourceSansPro-BoldIt.otf');
+        font-weight: bold;
+        font-style: italic;
+     }
+/*Comando de Importação de fonte dentro do Seletor BODY*/
+    body{
+        font-family: "Source Sans Pro";
+    }
+
+    .cabecalho{
+        background: white;
+        padding: 15px ;
+    }
+    /*LOGO*/
+    .logo{
+        background-image: url("../img/oficial-logo-negativo-120x120.png"); /*Apenas com esse comando faz com que a imagem se repita*/
+/*Esse comando faz com que a logo não se repita*/ 
+        background-repeat: no-repeat; 
+/*É necessário porque a outra entrada "logo" no rodapé como link e normalmente ela é inline, é necessário ser bloco*/
+        display: block; 
+        width: 120px;
+        height: 100px;
+/*É um armengue, para reduzir o tamanho do inscrito no mesmo bloco a 0*/        
+        text-indent: -9999px;
+        margin: 0;
+    }
+    .logo--branco{
+        background-image: url("../img/oficial-logo-modificado.png");
+        background-position-y: 0px;   
+    }
+
+    /*MENU PRINCIPAL*/
+    .menu-principal__botao{
+        display: block;
+        width: 50px;
+        height: 50px;
+        text-indent: -9999px;
+        background-color: white;
+        background-image: url("../img/img/menuprincipal-btn-bg.png");
+        background-repeat: no-repeat;
+        background-position: 5px 5px;
+        border-color: #c4c4c4;
+        border-style: solid;
+        border-radius: 5px;
+        cursor: pointer; /*Quando passar o cursor por cima irá abrir os links*/
+    
+    
+        position: absolute;
+        top:15px;
+        right:15px;
+    }
+    .menu-principal__botao--fechar{
+        background-position: -48px 7px;
+
+    }
+
+    .menu-principal__lista{
+        padding: 0;
+        list-style: none;
+    }
+        .menu-principal__item{
+        text-decoration: none;
+        font-weight: bold;
+        color: #343434;
+        margin-bottom: 10px;
+        display: block;
+        font-size: 18px;        
+    }
+    .menu-principal__item--atual{
+        color: #c08c0e;
+    }
+    .menu-principal__item:hover{
+       text-decoration: underline;
+        color: #c08c0e;
+        max-width: 13%;
+    }
+
+    /*Rodapé*/
+    .rodape{
+        color: white;        
+    }
+    .rodape .logo{
+        margin-bottom: 25px;
+    }
+    .rodape-linha1{
+        background-color: #272525;
+        background-image: url("../img/img/rodape-bg.jpg");
+        background-size: cover;        
+        padding: 15px;
+    }
+    .rodape-linha2{
+        background-color: black;
+        text-align: center;
+        padding: 15px;
+    }
+    .rodape__coluna{
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+    .rodape__titulo{
+        border-bottom: 1px solid white;
+        padding: 0 10px 10px 10px;
+        font-size: 22px;
+    }
+    .rodape__lista-links{
+        padding:0;
+        list-style: none;
+    }
+    .rodape__lista-links__item{
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+        margin-bottom: 10px;
+        display:block;
+        font-size: 18px;
+    }
+    .rodape__lista-links__item::before{
+        content: '>';
+        margin-bottom: 8px;
+        color: #c08c0e;
+    }
